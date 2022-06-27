@@ -1,0 +1,17 @@
+/* Делаем обе кнопки изначально невидимыми */
+.r_button {
+        display: none;
+
+}
+/* Меняем фон у отжатой кнопки */
+.r_button + label {
+        background: url("img_2.png") no-repeat scroll 0 0;
+        padding-left: 25px; /* Отодвигаем надписи от левого края */
+
+}
+
+/* Меняем фон у нажатой кнопки */
+.r_button:checked + label {
+        background: url("img_1.png") no-repeat scroll 0 0;
+
+}
